@@ -156,6 +156,12 @@ module Pod
       support_files_dir + 'module.modulemap'
     end
 
+    # @return [String] the unique and compatibe with standard name of module
+    #
+    def module_name
+      c99ext_identifier(label)
+    end
+
     # @return [Pathname] the absolute path of the prefix header file.
     #
     def prefix_header_path

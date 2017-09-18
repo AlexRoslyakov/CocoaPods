@@ -38,7 +38,7 @@ module Pod
       #
       def generate
         <<-MODULE_MAP.strip_heredoc
-          framework module #{target.product_module_name} {
+          framework module #{target.module_name} {
             umbrella header "#{target.umbrella_header_path.basename}"
 
             export *
